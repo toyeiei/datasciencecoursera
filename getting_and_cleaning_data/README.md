@@ -34,7 +34,7 @@ featureNames <- make.names(featureNames)
 names(full_data) <- featureNames
 ```
 
-I used base R function grep() to extract matched pattern using regular expressions. The code below extract columns that end with ".mean", ".std", "mean.x", "mean.y", "mean.z", "std.x", "std.y", or "std.z".
+I used base R function grep() to extract matched pattern using regular expressions. The code below extract columns that end with ".mean", ".std", "mean.x", "mean.y", "mean.z", "std.x", "std.y", or "std.z". I was able to extract 66 columns that contains "mean" and "std" from the original dataframe.
 
 ```
 (mean_cols <- grep(pattern = "(\\.mean$)|(mean\\.[xyz])$", x = featureNames, 
