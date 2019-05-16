@@ -18,6 +18,20 @@ R version 3.5.2 and RStudio version 1.1.456
 
 Two main packages I used for this assignment - dplyr and stringr. Both are very powerful for data & string manipulation.
 
+## Detailed Explanation
+
+```
+## clean feature names
+featureNames <- read.table(file = "features.txt")
+featureNames <- tolower(featureNames$V2)
+featureNames <- c("subject_id", featureNames, "activity")
+featureNames <- str_replace_all(featureNames, pattern = "-", ".")
+featureNames <- str_replace_all(featureNames, pattern = "\\(", "")
+featureNames <- str_replace_all(featureNames, pattern = "\\)", "")
+featureNames <- make.names(featureNames)
+names(full_data) <- featureNames
+```
+
 ## Final Result
 
 The final result (csv file) was also uploaded on this repo. You can check it here https://github.com/toyeiei/datasciencecoursera/blob/master/getting_and_cleaning_data/result.csv.
