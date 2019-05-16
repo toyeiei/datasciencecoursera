@@ -10,6 +10,12 @@ This means the final result will have 30 volunteers x 6 activities = 180 records
 
 ## Variables
 
+#### subject_id
+
+subject_id contains integer between 1-30, represent 30 volunteers in this experiment.
+
+#### activity
+
 The activity variable (factor) contains six actions as presented in the below table.
 
 |id |	activity |
@@ -20,3 +26,76 @@ The activity variable (factor) contains six actions as presented in the below ta
 | 4	| SITTING |
 | 5	| STANDING |
 | 6	| LAYING |
+
+#### features that contain mean, std statistics
+
+I used regular expressions to detect the columns that contains mean or std as discussed in detail the README.md. There are 66 columns that meet this criterion. Below are the final features included in our analysis.
+
+| feature | 
+| --- |
+| tbodyacc.mean.x |
+| tbodyacc.mean.y |
+| tbodyacc.mean.z |
+| tgravityacc.mean.x |
+| tgravityacc.mean.y |
+| tgravityacc.mean.z |
+| tbodyaccjerk.mean.x |
+| tbodyaccjerk.mean.y |
+| tbodyaccjerk.mean.z |
+| tbodygyro.mean.x |
+| tbodygyro.mean.y |
+| tbodygyro.mean.z |
+| tbodygyrojerk.mean.x |
+| tbodygyrojerk.mean.y |
+| tbodygyrojerk.mean.z |
+| tbodyaccmag.mean |
+| tgravityaccmag.mean |
+| tbodyaccjerkmag.mean |
+| tbodygyromag.mean |
+| tbodygyrojerkmag.mean |
+| fbodyacc.mean.x |
+| fbodyacc.mean.y |
+| fbodyacc.mean.z |
+| fbodyaccjerk.mean.x |
+| fbodyaccjerk.mean.y |
+| fbodyaccjerk.mean.z |
+| fbodygyro.mean.x |
+| fbodygyro.mean.y |
+| fbodygyro.mean.z |
+| fbodyaccmag.mean |
+| fbodybodyaccjerkmag.mean |
+| fbodybodygyromag.mean |
+| fbodybodygyrojerkmag.mean |
+| tbodyacc.std.x |
+| tbodyacc.std.y |
+| tbodyacc.std.z |
+| tgravityacc.std.x |
+| tgravityacc.std.y |
+| tgravityacc.std.z |
+| tbodyaccjerk.std.x |
+| tbodyaccjerk.std.y |
+| tbodyaccjerk.std.z |
+| tbodygyro.std.x |
+| tbodygyro.std.y |
+| tbodygyro.std.z |
+| tbodygyrojerk.std.x |
+| tbodygyrojerk.std.y |
+| tbodygyrojerk.std.z |
+| tbodyaccmag.std |
+| tgravityaccmag.std |
+| tbodyaccjerkmag.std |
+| tbodygyromag.std |
+| tbodygyrojerkmag.std |
+| fbodyacc.std.x |
+| fbodyacc.std.y |
+| fbodyacc.std.z |
+| fbodyaccjerk.std.x |
+| fbodyaccjerk.std.y |
+| fbodyaccjerk.std.z |
+| fbodygyro.std.x |
+| fbodygyro.std.y |
+| fbodygyro.std.z |
+| fbodyaccmag.std |
+| fbodybodyaccjerkmag.std |
+| fbodybodygyromag.std |
+| fbodybodygyrojerkmag.std |
