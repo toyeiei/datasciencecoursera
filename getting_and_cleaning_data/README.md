@@ -18,7 +18,9 @@ R version 3.5.2 and RStudio version 1.1.456
 
 Two main packages I used for this assignment - dplyr and stringr. Both are very powerful for data & string manipulation.
 
-## Detailed Explanation
+## Brief Explanation
+
+The first step is just read all the datasets into RStudio using read.table(). Then I cleaned the feature names using the code below, removing "()" and replacing "-" with ".".
 
 ```
 ## clean feature names
@@ -32,10 +34,29 @@ featureNames <- make.names(featureNames)
 names(full_data) <- featureNames
 ```
 
+I used base R function grep() to extract matched pattern using regular expressions. The code below extract columns that end with ".mean", ".std", "mean.x", "mean.y", "mean.z", "std.x", "std.y", or "std.z".
+
+```
+(mean_cols <- grep(pattern = "(\\.mean$)|(mean\\.[xyz])$", x = featureNames, 
+                  ignore.case = T, value = T))
+(std_cols <- grep(pattern = "(\\.std$)|(std\\.[xyz])$", x = featureNames, 
+                 ignore.case = T, value = T))
+(mean_std_cols <- c("subject_id", "activity", mean_cols, std_cols))
+clean_data <- full_data[, mean_std_cols]
+```
+
+The final step is very easy using dplyr::summarise_all() function. Just group the dataset by column subject_id and activity before summarise_all() and we will get the desired result.
+
+```
+summary_avg_data <- clean_data %>%
+  group_by(subject_id, activity) %>%
+  summarise_all(.funs = mean) %>% as.data.frame()
+```
+
 ## Final Result
 
 The final result (csv file) was also uploaded on this repo. You can check it here https://github.com/toyeiei/datasciencecoursera/blob/master/getting_and_cleaning_data/result.csv.
 
 ## Date Submitted
 
-16 May 2019
+16 May 2019 by Kasidis Satangmongkol :)
