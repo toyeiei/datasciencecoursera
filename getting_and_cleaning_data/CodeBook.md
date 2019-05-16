@@ -8,15 +8,15 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 This means the final result will have 30 volunteers x 6 activities = 180 records and 68 columns (subject_id, activity, and 66 average statistics). We'll discuss this dataset below.
 
-## Observation
-
-id |	activity
-1	| WALKING
-2	| WALKING_UPSTAIRS
-3	| WALKING_DOWNSTAIRS
-4	| SITTING
-5	| STANDING
-6	| LAYING
-
 ## Variables
 
+The activity variable (factor) contains six actions as presented in the below table.
+
+|id |	activity |
+| --- | --- |
+| 1	| WALKING |
+| 2	| WALKING_UPSTAIRS |
+| 3	| WALKING_DOWNSTAIRS |
+| 4	| SITTING |
+| 5	| STANDING |
+| 6	| LAYING |
