@@ -10,4 +10,14 @@ Hello friends, this is my repo for the final course project of Getting and Clear
 
 Note - First, I merged datasets (train, test, subject) and labelled them before extracting target columns with regular expressions.
 
+## Software
+
+R version 3.5.2 and RStudio version 1.1.456
+
+## Package Installation
+
+Two main packages I used for this assignment - dplyr and stringr. Both are very powerful for data & string manipulation.
+
+## Final Result
+
 The final result (csv file) was also uploaded on this repo. You can check it here https://github.com/toyeiei/datasciencecoursera/blob/master/getting_and_cleaning_data/result.csv.
