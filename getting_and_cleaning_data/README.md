@@ -21,3 +21,7 @@ Two main packages I used for this assignment - dplyr and stringr. Both are very 
 ## Final Result
 
 The final result (csv file) was also uploaded on this repo. You can check it here https://github.com/toyeiei/datasciencecoursera/blob/master/getting_and_cleaning_data/result.csv.
+
+## Date Submitted
+
+16 May 2019
