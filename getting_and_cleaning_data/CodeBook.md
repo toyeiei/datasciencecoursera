@@ -103,3 +103,7 @@ I used regular expressions to detect the columns that contains mean or std as di
 ## Download this dataset
 
 The dataset is freely available for research on http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+
+## Final Clean Result
+
+Please see the final clean result heer https://github.com/toyeiei/datasciencecoursera/blob/master/getting_and_cleaning_data/result.csv. (CSV looks nicer on github :))
