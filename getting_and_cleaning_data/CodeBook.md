@@ -29,7 +29,7 @@ The activity variable (factor) contains six actions as presented in the below ta
 
 #### features that contain mean, std statistics
 
-I used regular expressions to detect the columns that contains mean or std as discussed in detail the README.md. There are 66 columns that meet this criterion. Below are the final features included in our analysis.
+I used regular expressions to detect the columns that contains mean or std as discussed in detail the README.md. There are 66 columns that meet this criterion. I also cleaned variable names using `make.names()`, replace "-" with "." and remove "(" and ")". Below are the final features included in our analysis.
 
 | feature | 
 | --- |
@@ -99,3 +99,7 @@ I used regular expressions to detect the columns that contains mean or std as di
 | fbodybodyaccjerkmag.std |
 | fbodybodygyromag.std |
 | fbodybodygyrojerkmag.std |
+
+## Download this dataset
+
+The dataset is freely available for research on http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
