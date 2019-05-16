@@ -10,11 +10,11 @@ This means the final result will have 30 volunteers x 6 activities = 180 records
 
 ## Variables
 
-#### subject_id
+#### Column1: subject_id
 
 subject_id contains integer between 1-30, represent 30 volunteers in this experiment.
 
-#### activity
+#### Column2: activity
 
 The activity variable (factor) contains six actions as presented in the below table.
 
@@ -27,7 +27,7 @@ The activity variable (factor) contains six actions as presented in the below ta
 | 5	| STANDING |
 | 6	| LAYING |
 
-#### features that contain mean, std statistics
+#### Column3-68: features that contain mean, std statistics
 
 I used regular expressions to detect the columns that contains mean or std as discussed in detail the README.md. There are 66 columns that meet this criterion. I also cleaned variable names using `make.names()`, replace "-" with "." and remove "(" and ")". Below are the final features included in our analysis.
 
