@@ -18,7 +18,7 @@ R version 3.5.2 and RStudio version 1.1.456
 
 Two main packages I used for this assignment - dplyr and stringr. Both are very powerful for data & string manipulation.
 
-## Brief Explanation
+## Detailed Explanation
 
 The first step is just read all the datasets into RStudio using read.table(). Then I cleaned the feature names using the code below, removing "()" and replacing "-" with ".".
 
