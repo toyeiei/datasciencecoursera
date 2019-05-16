@@ -106,4 +106,4 @@ The dataset is freely available for research on http://archive.ics.uci.edu/ml/da
 
 ## Final Clean Result
 
-Please see the final clean result heer https://github.com/toyeiei/datasciencecoursera/blob/master/getting_and_cleaning_data/result.csv. (CSV looks nicer on github :))
+Please see the final clean result [here](https://github.com/toyeiei/datasciencecoursera/blob/master/getting_and_cleaning_data/result.csv). I uploaded both csv and txt file for your review :).
